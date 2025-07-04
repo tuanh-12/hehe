@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #777;
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+        .login-container h1 {
+            font-family: 'Georgia', serif;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .login-container h2 {
+            font-family: 'Georgia', serif;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        input {
+            width: calc(100% - 22px);
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(to right, #e91e63, #9c27b0);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background: linear-gradient(to right, #d81b60, #8e24aa);
+        }
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .remember-forgot a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .remember-forgot a:hover {
+            text-decoration: underline;
+        }
+        .social-buttons {
+            margin-top: 20px;
+        }
+        .social-buttons button {
+            width: 48%;
+            padding: 12px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .social-buttons button.facebook {
+            background: #1877f2;
+            color: white;
+        }
+        .social-buttons button.twitter {
+            background: #1da1f2;
+            color: white;
+        }
+        .social-buttons button:hover {
+            opacity: 0.9;
+        }
+        .or-divider {
+            margin: 20px 0;
+            position: relative;
+            text-align: center;
+        }
+        .or-divider span {
+            background: white;
+            padding: 0 10px;
+            position: relative;
+            z-index: 1;
+        }
+        .or-divider::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #ddd;
+            transform: translateY(-50%);
+        }
+        .copyright {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #777;
+        }
+        
+    </style>
+    <script>
+        function login(event) {
+            event.preventDefault();
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            if (email === "tensv" && password === "123") {
+                window.location.href = "trangchu.html";
+            } else {
+                alert("Sai tài khoản hoặc mật khẩu!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 40px;">NextGen Laptops</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTBgGu93kNTQEdfl7IDQ5DmTw28Ow_p8fPoYJhXK-ukUZJ0DvVkTwyfBAlpqWny5BlQv4&usqp=CAU" height="60px" >
+        <h2>Đăng Nhập</h2>
+        <form onsubmit="login(event)">
+            <input type="text" id="email" placeholder="Tài khoản" required>
+            <input type="password" id="password" placeholder="Mật khẩu" required>
+            <button type="submit">Đăng Nhập</button>
+        </form>
+        <div class="remember-forgot">
+            <a href="#">Quên mật khẩu?</a>
+        </div>
+        <div class="or-divider"><span>hoặc</span></div>
+        <div class="social-buttons">
+            <button class="facebook">Facebook</button>
+            <button class="twitter">Twitter</button>
+        </div>
+        <div class="copyright">
+            © 2024 NextGen Laptops. 
+        </div>
+    </div>
+</body>
+</html>

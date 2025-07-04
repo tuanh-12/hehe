@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Laptops</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #ffffff;
+        }
+        .header {
+            background-color: #005599;
+            padding: 10px 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header img {
+            height: 50px;
+            margin-right: 15px;
+        }
+        .tenshop {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        .search-container {
+            margin: 15px auto;
+            text-align: center;
+        }
+        .search-input {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .search-btn {
+            padding: 10px 20px;
+            background-color: #005599;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        nav.navbar, nav.thanhcongculaptop {
+            background-color: #005599;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav.navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav.navbar ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav.navbar ul li a, nav.thanhcongculaptop a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav.thanhcongculaptop a {
+            margin: 0 10px;
+        }
+        .featured-products {
+            padding: 30px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+        .featured-products h2 {
+            margin-bottom: 20px;
+            color: #002244;
+        }
+        .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product-item {
+            background-color: #FFFFFF;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product-item h3 {
+            font-size: 18px;
+            color: #333;
+        }
+        .price {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #FFFFFF;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-area">
+            <img src="https://cdn-icons-png.flaticon.com/512/4436/4436481.png" alt="Logo">
+            <span class="tenshop">NextGen Laptops</span>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="search-input" class="search-input" placeholder="Tìm Kiếm">
+        <button class="search-btn" onclick="searchFunction()">Tìm Kiếm</button>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="sanpham.html">Sản phẩm Laptop</a></li>
+            <li><a href="gioithieu.html">Giới Thiệu</a></li>
+            <li><a href="thongtin.html">Thông Tin</a></li>
+            <li><a href="lienhe.html">Liên Hệ</a></li>
+            <li><a href="tragop.html">Trả Góp</a></li>
+        </ul>
+    </nav>
+
+   
+  <!-- Submenu -->
+  <nav class="thanhcongculaptop">
+    <a href="SanphamAcer.html">Laptop Acer</a>
+    <a href="SanphamAsus.html">Laptop Asus</a>
+    <a href="Sanphamlenova.html">Laptop Lenovo</a>
+    <a href="Sanphamhp.html">Laptop HP</a>
+  </nav>
+<!-- Các sản phẩm nổi bật -->
+<section class="featured-products">
+    <h2>Sản phẩm nổi bật</h2>
+    <div class="product-list">
+        <!-- Sản phẩm 3 -->
+        <div class="product-item">
+            <img src="https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/lenovo_legion_slim_5_16ahp9_bfee1bbaf2.png">
+        <h3>Laptop Lenovo Gaming Legion Slim 5 </h3>
+        <p class="price" style=" color: red;">38.980.000đ</p>
+        <a href="muasanpham3.html" class="btn">Mua ngay</a>
+    </div>
+    <!-- Sản phẩm 4 -->
+    <div class="product-item">
+        <img src="https://product.hstatic.net/200000837185/product/xgear-laptop-acer-predator-helios-neo-14-phn14-51-96hg-nh-qrnsv-001-1_e1634d2221474c2d83e9a34f6b99c525_grande.png">
+    <h3>Lenovo Gaming LQQ
+        15.6"FHD
+    </h3>
+    
+    <p class="price" style=" color: red;">20.490.000đ</p>
+    <a href="muasanpham4.html" class="btn">Mua ngay</a>
+</div>
